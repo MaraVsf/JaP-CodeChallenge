@@ -16,8 +16,9 @@ function enviarDatos() {
     .then(datos => {
         document.getElementById('nombre').value = "";
         document.getElementById('apellido').value = "";
-        document.getElementById('fecha').value = 0;
-        alert("Enviado correctamente")
+        document.getElementById('fecha').value = "";
+        alert("Enviado correctamente");
+        console.log(datos)
     })
 }
 
